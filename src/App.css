@@ -2,4 +2,29 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 90px;
+  margin-top: 20px;
+}
 
+button {
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  font-size: 30px;
+}
+
+input {
+  margin: 15px;
+  padding: 10px;
+}
+
+label {
+  display: block;
+}
