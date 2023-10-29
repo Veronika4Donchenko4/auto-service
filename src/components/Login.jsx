@@ -1,12 +1,18 @@
 import { useState } from 'react';
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [data, setData] = useState({ username: '', password: '' });
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target);
+    console.log(data);
+    alert(JSON.stringify(data));
   };
+
+  const handleInputChange = (e, name) => {
+    setData({ ...data, [name]: e.target.value });
+  };
+
   return (
     <>
       <h1>Login Form</h1>
@@ -15,18 +21,16 @@ const Login = () => {
           Username:
           <input
             type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            name="username"
+            value={data.username}
+            onChange={(e) => handleInputChange(e, 'username')}
           />
         </label>
         <label>
           Password:
           <input
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            name="password"
+            value={data.password}
+            onChange={(e) => handleInputChange(e, 'password')}
           />
         </label>
         <button type="submit">Login</button>
