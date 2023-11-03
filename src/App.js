@@ -1,13 +1,13 @@
-// import Login from './components/Login';
-// import './App.css';
-// import './index.css';
+import Info from './components/Info';
+import './App.css';
+import './index.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Login />
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <div className="App">
+      <Info />
+    </div>
+  );
+}
 
-// export default App;
+export default App;

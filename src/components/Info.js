@@ -1,3 +1,5 @@
+import './Info.css';
+
 const Info = () => {
   return (
     <>
