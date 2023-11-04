@@ -6,6 +6,8 @@ function App() {
   return (
     <div className="App">
       <Info />
+      <h1>Hello its me</h1>
+      <button className="my-btn">Click me inside App component</button>
     </div>
   );
 }
