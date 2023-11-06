@@ -9,6 +9,7 @@ const TodoForm = ({ addTodo }) => {
     setText('');
   };
   return (
+    <div>
     <form onSubmit={onSubmitHandler}>
       <h1 className={styles.toDo}>Todo App</h1>
       <input
@@ -21,6 +22,7 @@ const TodoForm = ({ addTodo }) => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 
