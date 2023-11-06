@@ -1,10 +1,8 @@
 .input {
-  width: 200px;
-  height: 30px;
+  padding: 10px 20px;
+  margin: 20px 20px;
+  font-size: 1.5rem;
   border-radius: 5px;
-  border: none;
-  padding: 2px;
-  margin: 5px 20px 0 0;
 }
 
 .input::placeholder {
@@ -12,8 +10,8 @@
 }
 
 .myBtn {
-  width: 60px;
-  height: 35px;
+  width: 75px;
+  height: 45px;
   border-radius: 5px;
   border: none;
   background-color: antiquewhite;
@@ -21,10 +19,9 @@
 }
 
 .toDo {
-    text-align: center;
-    color: aliceblue;
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
+  text-align: center;
+  color: aliceblue;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

@@ -1,9 +1,9 @@
 import styles from './Todo.module.css';
 
-const Todo = ({ todo }) => {
+const Todo = ({ todo, deleteTodo, index }) => {
   return (
-    <div>
-      <h1>{todo}</h1>
+    <div className={styles.todo} onDoubleClick={() => deleteTodo(index)}>
+      <div className={styles.todoText}>{todo}</div>
     </div>
   );
 };
